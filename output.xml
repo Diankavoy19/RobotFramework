@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-04T14:55:45.630571" rpa="false" schemaversion="5">
+<suite id="s1" name="TC2" source="d:\Education\QA\PythonTask\robot framework\TC2.robot">
+<kw name="Navigate to site" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:45.868146" level="INFO">Opening browser 'Chrome' to base url 'https://demo.opencart.com/'.</msg>
+<arg>https://demo.opencart.com/</arg>
+<arg>Chrome</arg>
+<arg>executable_path=./chromedriver.exe</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-04T14:55:45.868146" elapsed="2.078689"/>
+</kw>
+<status status="PASS" start="2024-07-04T14:55:45.867114" elapsed="2.079721"/>
+</kw>
+<test id="s1-t1" name="AddToWishlistTest" line="13">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:47.948939" level="INFO">Clicking element 'css=.nav.float-end .dropdown'.</msg>
+<arg>css=.nav.float-end .dropdown</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:47.947832" elapsed="0.128426"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:48.077256" level="INFO">Clicking link 'css=a[href*="login"]'.</msg>
+<arg>css=a[href*="login"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:48.077256" elapsed="0.393403"/>
+</kw>
+<kw name="Set values in form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:48.472654" level="INFO">Typing text 'testuserfortesting14@mail.com' into text field 'css=input[name="email"]'.</msg>
+<arg>css=input[name="email"]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:48.472654" elapsed="0.167790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:48.641442" level="INFO">Typing text '123456' into text field 'css=input[name="password"]'.</msg>
+<arg>css=input[name="password"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:48.640444" elapsed="0.101774"/>
+</kw>
+<arg>${EMAIL}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-07-04T14:55:48.471656" elapsed="0.270562"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:48.743214" level="INFO">Clicking button 'css=[type="submit"]'.</msg>
+<arg>css=[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:48.743214" elapsed="0.064553"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-04T14:55:51.809157" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-04T14:55:48.808767" elapsed="3.000970"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:51.839644" level="INFO">Current page contains element 'xpath=//h2[contains(text(),'My Account')]'.</msg>
+<arg>xpath=//h2[contains(text(),'My Account')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-07-04T14:55:51.811721" elapsed="0.028920"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:51.841637" level="INFO">Clicking element 'css=i[class*="home"]'.</msg>
+<arg>css=i[class*="home"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:51.841637" elapsed="0.426342"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:52.268977" level="INFO">Clicking element 'css=li[class="nav-item dropdown"]:nth-child(2)'.</msg>
+<arg>css=li[class="nav-item dropdown"]:nth-child(2)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:52.268977" elapsed="0.054866"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:52.324841" level="INFO">Clicking element 'css=div[class="dropdown-menu show"] a[class="see-all"]'.</msg>
+<arg>css=div[class="dropdown-menu show"] a[class="see-all"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:52.324841" elapsed="1.010446"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>css=div.col:nth-child(2) button[type="submit"]:nth-child(2)</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-07-04T14:55:53.336289" elapsed="0.328773"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:53.668061" level="INFO">Clicking element 'css=div.col:nth-child(2) button[type="submit"]:nth-child(2)'.</msg>
+<arg>css=div.col:nth-child(2) button[type="submit"]:nth-child(2)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-04T14:55:53.667059" elapsed="0.079692"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-07-04T14:55:53.756163" level="INFO">Current page contains element 'css=#alert'.</msg>
+<arg>css=#alert</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-07-04T14:55:53.747749" elapsed="0.009411"/>
+</kw>
+<status status="PASS" start="2024-07-04T14:55:47.947832" elapsed="5.809328"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-04T14:55:53.758157" elapsed="6.192654"/>
+</kw>
+<status status="PASS" start="2024-07-04T14:55:45.635276" elapsed="14.316541"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC2">TC2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
